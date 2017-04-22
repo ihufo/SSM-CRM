@@ -1,0 +1,10 @@
+1. 导入pageTotal.jar包
+2. 构造Page对象填充下列属性:
+	int total     		查询的总记录数
+	int page   		当前页
+	int size		每页显示记录条数
+	List<T> rows		显示的数据集合
+3. jsp页面引入下面的标签:
+	<%@ taglib prefix="itcast" uri="http://itcast.cn/common/"%>
+4. 在jsp页面中使用分页:
+	<itcast:page url="${pageContext.request.contextPath }/customer/list.action" />
